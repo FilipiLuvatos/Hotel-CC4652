@@ -25,6 +25,7 @@
         android:layout_height="115dp"
         android:layout_marginStart="57dp"
         android:layout_marginLeft="57dp"
+        android:OnClick="BuscarCadastro"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/hotel1" />
@@ -36,6 +37,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="8dp"
+        android:OnClick="cadastrar"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:srcCompat="@drawable/hotel3" />
@@ -46,6 +48,7 @@
         android:layout_height="110dp"
         android:layout_marginStart="57dp"
         android:layout_marginLeft="57dp"
+        android:OnClick="cafedamanha"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         app:srcCompat="@drawable/hotel2" />
@@ -101,6 +104,7 @@
         android:layout_marginStart="22dp"
         android:layout_marginLeft="22dp"
         android:layout_marginTop="2dp"
+        android:OnClick="Reserva"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         app:srcCompat="@drawable/hotel4" />
@@ -122,7 +126,8 @@
         android:layout_marginStart="140dp"
         android:layout_marginLeft="140dp"
         android:layout_marginTop="17dp"
-        android:text="Deletar cadastro"
+        android:OnClick="deletar"
+        android:text="Deletarcadastro"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 

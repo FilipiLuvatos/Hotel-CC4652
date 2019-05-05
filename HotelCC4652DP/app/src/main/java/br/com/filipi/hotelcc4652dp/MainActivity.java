@@ -1,10 +1,12 @@
 package br.com.filipi.hotelcc4652dp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -36,9 +38,29 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mTextMessage = (TextView) findViewById(R.id.message);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
     }
+    public void BuscarCadastro(View v){
+        startActivity(new Intent(this, br.com.filipi.hotelcc4652dp.geral_do_hotel.class));
+
+    }
+    public void cadastrar(View v){
+        startActivity(new Intent(this, br.com.filipi.hotelcc4652dp.cadastrar.class));
+
+    }
+    public void cafedamanha(View v){
+        startActivity(new Intent(this, br.com.filipi.hotelcc4652dp.cafe_da_manha.class));
+
+    }
+    public void Reserva(View v){
+        startActivity(new Intent(this, br.com.filipi.hotelcc4652dp.reservas.class));
+
+    }
+    public void Deletarcadastro(View v){
+        startActivity(new Intent(this, br.com.filipi.hotelcc4652dp.delete_cliente.class));
+
+    }
+
+
 
 }

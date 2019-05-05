@@ -18,6 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="br.com.filipi.hotelcc4652dp.delete_cliente"/>
+        <activity android:name="br.com.filipi.hotelcc4652dp.reservas"/>
+        <activity android:name="br.com.filipi.hotelcc4652dp.cafe_da_manha"/>
+        <activity android:name="br.com.filipi.hotelcc4652dp.cadastrar"/>
+        <activity android:name="br.com.filipi.hotelcc4652dp.geral_do_hotel"/>
     </application>
 
 </manifest>
