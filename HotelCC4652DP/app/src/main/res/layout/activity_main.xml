@@ -43,9 +43,12 @@
         android:id="@+id/imageView2"
         android:layout_width="125dp"
         android:layout_height="119dp"
-        app:srcCompat="@drawable/hotel3"
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="127dp" />
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/hotel3" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -59,9 +62,11 @@
         android:id="@+id/imageView4"
         android:layout_width="121dp"
         android:layout_height="110dp"
-        app:srcCompat="@drawable/ic_notifications_black_24dp"
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="276dp" />
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:srcCompat="@drawable/ic_notifications_black_24dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -75,9 +80,12 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginLeft="122dp"
+        android:layout_marginTop="106dp"
         android:text="Cadastrar"
-        tools:layout_editor_absoluteX="268dp"
-        tools:layout_editor_absoluteY="106dp" />
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView7"
@@ -91,8 +99,11 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="257dp"
-        tools:layout_editor_absoluteY="257dp" />
+        android:layout_marginStart="93dp"
+        android:layout_marginLeft="93dp"
+        android:layout_marginTop="11dp"
+        android:text="Reservas "
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
 </android.support.constraint.ConstraintLayout>
