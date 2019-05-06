@@ -8,7 +8,7 @@ import android.widget.EditText;
 
 public class cafe_da_manha extends AppCompatActivity {
 
-    EditText ed12,ed22,ed18;
+    EditText ed12,ed19,ed18;
     Button B4,B7,B8;
     Fila f = new Fila(100);
 
@@ -20,7 +20,7 @@ public class cafe_da_manha extends AppCompatActivity {
 
         ed12 = (EditText)findViewById(R.id.editText12);
         ed18 = (EditText)findViewById(R.id.editText18);
-        ed22 = (EditText)findViewById(R.id.editText19);
+        ed19 = (EditText)findViewById(R.id.editText19);
         B4 = (Button)findViewById(R.id.button4);
         B7 = (Button)findViewById(R.id.button7);
         B8 = (Button)findViewById(R.id.button8);
@@ -28,11 +28,16 @@ public class cafe_da_manha extends AppCompatActivity {
         B4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String aux;
+                String aux,aux3;
 
                 aux = ed12.getText().toString();
 
                 f.insereNome(aux);
+
+                f.imprimeFila();
+               // ed19.setText(f.imprimeFila());
+
+
 
             }
 
@@ -41,16 +46,18 @@ public class cafe_da_manha extends AppCompatActivity {
         B7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                f.removeNome();;
+                f.removeNome();
             }
         });
 
         B8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String aux2;
-                aux2 = ed18.getText().toString();
-                f.pesquisaFila(aux2);
+                String aux;
+                aux = ed19.getText().toString();
+                f.pesquisaFila(aux);
+
+                ed18.setText(aux.toString());
             }
         });
 
