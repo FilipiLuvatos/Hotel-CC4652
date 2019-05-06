@@ -12,4 +12,6 @@ public class geral_do_hotel extends AppCompatActivity {
 
     }
 
+
+
 }
