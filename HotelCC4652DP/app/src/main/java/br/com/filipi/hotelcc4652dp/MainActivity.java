@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, br.com.filipi.hotelcc4652dp.reservas.class));
 
     }
-    public void Deletarcadastro(View v){
+    public void delete_cliente(View v){
         startActivity(new Intent(this, br.com.filipi.hotelcc4652dp.delete_cliente.class));
 
     }
