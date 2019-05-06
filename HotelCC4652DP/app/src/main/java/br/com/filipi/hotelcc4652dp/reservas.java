@@ -26,7 +26,7 @@ public class reservas extends AppCompatActivity {
         T20 = (EditText)findViewById(R.id.editText20);
         B12 = (Button)findViewById(R.id.button12);
 
-        B5.setOnClickListener(new View.OnClickListener() {
+        B5.setOnClickListener(new View.OnClickListener() {//Isere
             @Override
             public void onClick(View v) {
                 String aux4,aux5,aux6;
@@ -41,13 +41,13 @@ public class reservas extends AppCompatActivity {
             }
         });
 
-        B9.setOnClickListener(new View.OnClickListener() {
+        B9.setOnClickListener(new View.OnClickListener() {//Remove
             @Override
             public void onClick(View v) {
                 p.removeNome();
             }
         });
-        B12.setOnClickListener(new View.OnClickListener() {
+        B12.setOnClickListener(new View.OnClickListener() {//Busca
             @Override
             public void onClick(View v) {
 

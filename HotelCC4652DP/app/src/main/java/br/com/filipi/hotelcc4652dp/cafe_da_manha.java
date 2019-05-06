@@ -25,7 +25,7 @@ public class cafe_da_manha extends AppCompatActivity {
         B7 = (Button)findViewById(R.id.button7);
         B8 = (Button)findViewById(R.id.button8);
 
-        B4.setOnClickListener(new View.OnClickListener() {
+        B4.setOnClickListener(new View.OnClickListener() {//Insere
             @Override
             public void onClick(View v) {
                 String aux,aux3;
@@ -43,14 +43,14 @@ public class cafe_da_manha extends AppCompatActivity {
 
         });
 
-        B7.setOnClickListener(new View.OnClickListener() {
+        B7.setOnClickListener(new View.OnClickListener() {//Remove
             @Override
             public void onClick(View v) {
                 f.removeNome();
             }
         });
 
-        B8.setOnClickListener(new View.OnClickListener() {
+        B8.setOnClickListener(new View.OnClickListener() {//Busca
             @Override
             public void onClick(View v) {
                 String aux;

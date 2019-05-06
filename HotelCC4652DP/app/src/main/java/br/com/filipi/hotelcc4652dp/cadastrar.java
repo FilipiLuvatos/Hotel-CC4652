@@ -52,7 +52,7 @@ public class cadastrar extends AppCompatActivity {
             }
         });
 
-        B11.setOnClickListener(new View.OnClickListener() {
+        B11.setOnClickListener(new View.OnClickListener() {//Remove
             @Override
             public void onClick(View v) {
                 String aux2;
