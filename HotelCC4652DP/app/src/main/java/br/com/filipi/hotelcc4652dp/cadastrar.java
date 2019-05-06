@@ -9,8 +9,10 @@ import android.widget.EditText;
 
 public class cadastrar extends AppCompatActivity {
 
-    EditText cam1, cam2,cam3,cam5;
-    Button B1;
+    EditText cam1, cam2,cam3,cam5,cam6;
+    Button B1,B11;
+    EstruturaLDDE ELDDE = new EstruturaLDDE();
+
 
 
     @Override
@@ -21,25 +23,27 @@ public class cadastrar extends AppCompatActivity {
         cam1 = (EditText) findViewById(R.id.editText2);
         cam2 = (EditText) findViewById(R.id.editText3);
         cam3 = (EditText) findViewById(R.id.editText4);
-
+        cam6 = (EditText) findViewById(R.id.editText23);
         cam5 = (EditText) findViewById(R.id.editText11);
+        B11 = (Button) findViewById(R.id.button11);
         B1 = (Button) findViewById(R.id.button);
 
-        B1.setOnClickListener(new View.OnClickListener() {
+        B1.setOnClickListener(new View.OnClickListener() {//Inserir
             @Override
             public void onClick(View v) {
 
                 String aux;
                 String data1, data2;
 
+
                 aux = cam1.getText().toString();
                 data1 = cam2.getText().toString();
                 data2 = cam3.getText().toString();
 
-                EstruturaLDDE ELDDE = new EstruturaLDDE();
 
 
-                  ELDDE.adiciona(aux);
+
+                ELDDE.adiciona(aux);
                 ELDDE.adiciona(data1);
                 ELDDE.adiciona(data2);
 
@@ -48,6 +52,15 @@ public class cadastrar extends AppCompatActivity {
             }
         });
 
+        B11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String aux2;
+                aux2 = cam6.getText().toString();
+                ELDDE.remove(aux2);
+
+            }
+        });
 
 
 
